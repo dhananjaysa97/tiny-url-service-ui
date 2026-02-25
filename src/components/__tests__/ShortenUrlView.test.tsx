@@ -14,7 +14,6 @@ describe('ShortenUrlView', () => {
     
     const urlInput = screen.getByPlaceholderText('https://example.com');
     
-    // userEvent is async and handles focus/typing more realistically
     await user.type(urlInput, 'https://test.com');
     
     expect(urlInput).toHaveValue('https://test.com');

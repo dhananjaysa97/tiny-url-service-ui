@@ -22,7 +22,6 @@ describe('StatsSidePanel', () => {
 
     render(<StatsSidePanel code="abc123" onClose={() => {}} />);
 
-    // Verification of fields from StatsSidePanel.tsx
     await waitFor(() => {
       expect(screen.getByText('15')).toBeInTheDocument();
       expect(screen.getByText('https://www.google.com')).toBeInTheDocument();
